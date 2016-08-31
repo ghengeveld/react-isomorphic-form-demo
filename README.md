@@ -12,7 +12,16 @@ should retain those values when JavaScript kicks in.<sup id="a1">[1](#f1)</sup>
 <sup id="f1">[1](#a1)</sup> Due to an issue in React, this doesn't work for
 textareas.
 
-## Getting started
+[react-isomorphic-form]: https://github.com/ghengeveld/react-isomorphic-form
+
+## Live demo
+
+👉 http://react-isomorphic-form-demo.herokuapp.com/
+
+The live demo might be slow to initially boot as it runs on a free Heroku Dyno
+which goes to sleep after 30 minutes of inactivity.
+
+## Running locally
 
 ```shell
 npm install
@@ -20,5 +29,3 @@ npm start
 ```
 
 It should now be running at [http://localhost:8000](http://localhost:8000).
-
-[react-isomorphic-form]: https://github.com/ghengeveld/react-isomorphic-form
