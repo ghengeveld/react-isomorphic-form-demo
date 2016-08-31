@@ -1,6 +1,6 @@
-# Demo app for react-isomorphic-form
+# Demo app for [react-isomorphic-form]
 
-This is an example app using react-isomorphic-form with React Router. It
+This is an example app using [react-isomorphic-form] with React Router. It
 demonstrates how react-isomorphic-form can render server-side and be enhanced
 client-side.
 
@@ -20,3 +20,5 @@ npm start
 ```
 
 It should now be running at [http://localhost:8000](http://localhost:8000).
+
+[react-isomorphic-form]: https://github.com/ghengeveld/react-isomorphic-form
