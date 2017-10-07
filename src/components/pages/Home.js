@@ -37,6 +37,10 @@ export default class Home extends React.Component {
       <div>
         <Nav />
         <h1>Home</h1>
+        <p>
+          JavaScript on this page is intentionally slow to load.
+          You should be able to interact with the form nevertheless.
+        </p>
 
         <div className="row">
           <div className="col-xs-8">
