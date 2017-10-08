@@ -31,6 +31,6 @@
     "eslint-plugin-import": "^1.12.0",
     "eslint-plugin-jsx-a11y": "^2.0.1",
     "eslint-plugin-react": "^6.0.0",
-    "now": "8.3.9"
+    "now-travis": "1.0.1"
   }
 }

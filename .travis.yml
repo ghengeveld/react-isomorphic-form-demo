@@ -3,9 +3,15 @@ node_js:
   - '8'
 cache:
   directories:
-    - "node_modules"
-deploy:
-  provider: script
-  script: deploy.sh
-  on:
-    branch: master
+    - node_modules
+after_script:
+  - NOW_ALIAS=react-isomorphic-form-demo.now.sh node_modules/.bin/now-travis
+branches:
+  only:
+    - master
+env:
+  global:
+    - secure: >-
+        fx9SLsogbohuX9qQV94PJ7fSkUTeEov+/HI6wt0VksBT6ZoQA2crq/pv3EbjeSrqi9Z3n4BOcMaUwY/h9nonKJq7s1XPYTgtzgFRUsg7XkiS/4KDlKX/noUEwpUsRTlNYhqG5FveToq9A3z6YKwHHHUopE866Dz7It+aKBhAX/OypzwARjWts2Grm7/cxclNs3qHZpAbidCc62jA7C7JXZcmwFrAYKV9CvMfiA70Vua3jnWHV/su8s3BQSq9PFngTIfeOpJxmiTjrOgwJsT+c72BFwA6+BS1PTyTpqJ3dRX6ax48SmaHhJfPN2BDo+9KhxVVNs0vgLZlo2JJQaojyvHNvgxLJVn1/LOEbn6PL9R6Oh1HzZu+j0ZTWq2r3kF+pXgRBHde2EvAPXCvywk6nzgI2KvDAqH/pwyRnPsRKbctB2rQDjtOf2sCFI/rgQHLvEZiOW7i4HXHNePowMhZiFAHub+OaK7vv3HjPGJdnMv+mOHNMWW3pfN+hs7xlhAAjqF50eUdYtWr/5/7DM82ebOpWPXvZ+6Z2c+x6DBHGjbZUwcgQybFRQ6WYeUjInfjVO24GS4tgpaupEx8W3dbdPIvOOZ7Qp2GJL8friwLaIImGwMA2EBh+TDTiGw5RGowF/oBhIBdoEJhR8iv7yVbedB9EaLEoRm3DJSZJ4G0sQU=
+    - secure: >-
+        SkNP4It632oEVbflMG4YKoc/k30wjjqJN2ApillAX+7xrvqRGtblBeLFrzx5MH+oOyK5ZKyIitxjgHJBbZqM8kxM57/EqYVLMJt9pd0uiUi/UyDKNU9Ksfx47Nmrm3/XVHMHtKdtMYSlFDFwzl7zg0zSatOrW2olW9IkrVmFruO7YZRplID3z9zIugSHVDAnD6r/HWufAEpjoOoqGMttJNpumeaQqUxfUXn7hRWdJ9sdMxwjK1+LvtK82Z6r6Vz6jjd2JKuS8/CZtsaUmxF5CqUqLYADn6smzg+Dy4eckor0XX5V7MTADGrK5Vd/BcuLd7BI58JhN5Ug3INg5hjTtFqY2nUp3s8YPCpIgRhmzff0V4lycaA+Ox+YlNcC5p0784sCakJRtyiUc7+uPLYhvTFbM8f8KZdLqDRKfIFv2StDJxxohwKcnXxHZj4K9KUyJqWVOBUmhoiwtLvDXdmfLBoSFje9YJs4HR8x8EmlVC1JYJixF3PnVrXggEtho51x8837ndRQilQyX3l1jjrTOITC7F8rjkJ4C3PxuWpOHYQ5x15pnwSO6waFjm0shRgBbsmDOwwfUW5n2GTX4LfsQ8E61hBnjIbtVbolYBeMoYUNSRXW3sK9Na11d0AwcCZZi6maCvdy6EsJhE8u47ojVQ/3d9jIvgJuEWURvkqkEMc=
