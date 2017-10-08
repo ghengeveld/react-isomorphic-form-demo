@@ -16,10 +16,7 @@ textareas.
 
 ## Live demo
 
-👉 http://react-isomorphic-form-demo.herokuapp.com/
-
-The live demo might be slow to initially boot as it runs on a free Heroku Dyno
-which goes to sleep after 30 minutes of inactivity.
+👉 https://react-isomorphic-form-demo.now.sh/
 
 ## Running locally
 
